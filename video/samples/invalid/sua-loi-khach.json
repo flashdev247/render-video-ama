@@ -1,0 +1,100 @@
+{
+  "brief": {
+    "video_id": 0,
+    "template": "review-quote",
+    "voice": "vi-VN-HoaiMyNeural",
+    "brand": {
+      "name": "Brand Mẫu",
+      "host": "example.com",
+      "cta_label": "example.com",
+      "colors": {
+        "primary": "#1E293B",
+        "accent": "#4F46E5",
+        "background": "#0F172A",
+        "text": "#FFFFFF"
+      },
+      "font": "Be Vietnam Pro",
+      "logo_url": null,
+      "mascot": "none",
+      "voices": {
+        "host": "vi-VN-HoaiMyNeural",
+        "khach": "vi-VN-NamMinhNeural"
+      },
+      "hashtags": [
+        "#BrandMau"
+      ]
+    },
+    "persona": {
+      "key": "individual_shop",
+      "label": "Cá nhân, shop nhỏ, người kinh doanh tự do",
+      "tone": "Thân thiện, thực tế, ví dụ đời thường."
+    },
+    "facts": {
+      "project": {
+        "name": "Website bán bánh handmade",
+        "category": "Website bán hàng",
+        "url": "https://example.com/portfolio/website-ban-banh"
+      },
+      "review": {
+        "author": "Chị Mai",
+        "rating": 5,
+        "quote": "Làm việc rất nhanh, giải thích dễ hiểu, website dùng trên điện thoại rất mượt. Mình tự đăng sản phẩm được luôn.",
+        "project_name": "Website bán bánh handmade"
+      },
+      "topic": null
+    },
+    "images": [
+      "img/project-fullpage.jpg"
+    ],
+    "allowed_claims": [
+      "Báo giá trong 2 phút trên website",
+      "Không cần đặt cọc trước",
+      "Bàn giao 100% mã nguồn"
+    ],
+    "cta": {
+      "label": "example.com",
+      "url": "https://example.com/reviews"
+    },
+    "script": null
+  },
+  "script": {
+    "template": "review-quote",
+    "voice": "vi-VN-HoaiMyNeural",
+    "scenes": [
+      {
+        "type": "hook",
+        "title": "Khách nói gì về Brand Mẫu?",
+        "body": "Đánh giá thật từ chủ shop bánh",
+        "voiceover": "Chủ một tiệm bánh handmade đã nói gì sau khi có website riêng? Cùng nghe nhé."
+      },
+      {
+        "type": "quote",
+        "title": "Đánh giá 5 sao",
+        "body": "Làm việc siêu nhanh, website đẹp nhất mình từng thấy.",
+        "voiceover": "Chị Mai chia sẻ: làm việc rất nhanh, giải thích dễ hiểu, website dùng trên điện thoại rất mượt. Mình tự đăng sản phẩm được luôn.",
+        "image": "img/project-fullpage.jpg"
+      },
+      {
+        "type": "point",
+        "title": "Tự quản lý sản phẩm",
+        "body": "Không cần biết code, tự đăng bánh mới mỗi ngày",
+        "voiceover": "Website được làm để chủ shop tự đăng sản phẩm, không cần biết code, cập nhật bánh mới mỗi ngày chỉ vài thao tác."
+      },
+      {
+        "type": "cta",
+        "title": "Báo giá trong 2 phút",
+        "body": "Không cần đặt cọc trước",
+        "voiceover": "Bạn cũng muốn có website riêng cho shop? Vào example chấm com để nhận báo giá nhé."
+      }
+    ],
+    "caption": "\"Làm việc rất nhanh, giải thích dễ hiểu, website dùng trên điện thoại rất mượt.\" ⭐⭐⭐⭐⭐\n\nCảm ơn chị Mai đã tin tưởng Brand Mẫu! Xem thêm đánh giá tại example.com/reviews",
+    "hashtags": [
+      "#BrandMau",
+      "#DanhGiaKhachHang",
+      "#WebsiteBanHang"
+    ],
+    "youtube_title": "Khách hàng nói gì về Brand Mẫu? #Shorts",
+    "youtube_description": "Đánh giá thật của khách hàng về website bán bánh handmade do Brand Mẫu thực hiện. Xem thêm: https://example.com/reviews"
+  },
+  "expect": "trích nguyên văn lời khách"
+}

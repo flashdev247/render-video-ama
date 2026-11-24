@@ -1,0 +1,62 @@
+{
+  "video_id": 0,
+  "template": "tips",
+  "voice": "vi-VN-HoaiMyNeural",
+  "brand": {
+    "name": "Brand Mẫu",
+    "host": "example.com",
+    "cta_label": "example.com",
+    "colors": {
+      "primary": "#134E4A",
+      "accent": "#14B8A6",
+      "background": "#042F2E",
+      "text": "#FFFFFF"
+    },
+    "font": "Be Vietnam Pro",
+    "logo_url": "img/logo-mau.svg",
+    "mascot": "tia",
+    "voices": {
+      "host": "vi-VN-HoaiMyNeural",
+      "khach": "vi-VN-NamMinhNeural"
+    },
+    "hashtags": [
+      "#BrandMau"
+    ]
+  },
+  "persona": {
+    "key": "individual_shop",
+    "label": "Cá nhân, shop nhỏ, người kinh doanh tự do",
+    "tone": "Thân thiện, thực tế, ví dụ đời thường (shop quần áo, tiệm bánh, spa). Nói về tiền, thời gian, công sức vận hành chứ không nói về công nghệ."
+  },
+  "facts": {
+    "project": null,
+    "review": null,
+    "topic": {
+      "title": "3 lỗi khiến website bán hàng mất khách",
+      "angle": "Lỗi thường gặp ở website shop nhỏ: tải chậm trên điện thoại, đặt hàng rườm rà, thiếu thông tin liên hệ rõ ràng."
+    }
+  },
+  "images": [
+    "img/workspace_hyper_realistic_sm.webp",
+    "img/coding_detail_hyper_realistic_sm.webp"
+  ],
+  "allowed_claims": [
+    "Báo giá trong 2 phút trên website",
+    "Không cần đặt cọc trước",
+    "Bàn giao 100% mã nguồn",
+    "Hỗ trợ 1–6 tháng sau bàn giao",
+    "Giao trong 7–21 ngày"
+  ],
+  "seo": {
+    "keywords": [
+      "website bán hàng",
+      "làm website bán hàng",
+      "thiết kế website shop"
+    ]
+  },
+  "cta": {
+    "label": "example.com",
+    "url": "https://example.com/services/lam-website-ca-nhan-shop-nho"
+  },
+  "script": null
+}

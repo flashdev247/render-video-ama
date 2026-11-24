@@ -1,0 +1,49 @@
+{
+  "template": "quiz-ab",
+  "voice": "vi-VN-HoaiMyNeural",
+  "keyword": "website bán hàng",
+  "quiz": {
+    "mock": "button",
+    "a": "Nút đặt hàng to, màu nổi",
+    "b": "Chỉ có chữ xem thêm nhỏ",
+    "correct": "a"
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "title": "Đố bạn: *A hay B*?",
+      "body": "Chọn nhanh trước khi hết giờ",
+      "voiceover": "Đố bạn một câu về website bán hàng, chọn nhanh trước khi hết giờ nhé!",
+      "mood": "surprised"
+    },
+    {
+      "type": "choice",
+      "title": "Trang nào khách *dễ đặt* hơn?",
+      "voiceover": "Hai trang bán bánh giống nhau, chỉ khác cái nút. Trang nào khách dễ đặt hàng hơn? Bạn chọn đi!",
+      "hold": 3
+    },
+    {
+      "type": "answer",
+      "title": "Đáp án: *A*!",
+      "body": "Nút to, màu nổi, ngay dưới thông tin",
+      "voiceover": "Đáp án là A! Khách lướt điện thoại không đi tìm nút. Nút to, màu nổi, đặt ngay dưới thông tin chính thì khách bấm nhiều hơn.",
+      "mood": "happy"
+    },
+    {
+      "type": "cta",
+      "title": "Web có nút *dễ bấm*",
+      "body": "Không cần đặt cọc trước",
+      "voiceover": "Bạn đoán đúng không? Vào example chấm com nhận báo giá trong hai phút nha!",
+      "mood": "happy"
+    }
+  ],
+  "caption": "Website bán hàng: A hay B? 🤔\n\nNút đặt hàng to, màu nổi giúp khách bấm nhiều hơn.\nNhận báo giá tại example.com\nBạn chọn đúng không? Bình luận A hoặc B nhé!",
+  "hashtags": [
+    "#BrandMau",
+    "#WebsiteBanHang",
+    "#ThietKeWebsite",
+    "#DoVui"
+  ],
+  "youtube_title": "Website bán hàng: trang A hay B? #Shorts",
+  "youtube_description": "Website bán hàng: nút đặt hàng to hay chữ nhỏ? Đáp án trong video. Nhận báo giá tại https://example.com/services/lam-website-ca-nhan-shop-nho"
+}

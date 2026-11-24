@@ -1,0 +1,69 @@
+{
+  "video_id": 0,
+  "template": "project-showcase",
+  "voice": "vi-VN-NamMinhNeural",
+  "brand": {
+    "name": "Brand Mẫu",
+    "host": "example.com",
+    "cta_label": "example.com",
+    "colors": {
+      "primary": "#1E293B",
+      "accent": "#4F46E5",
+      "background": "#0F172A",
+      "text": "#FFFFFF"
+    },
+    "font": "Be Vietnam Pro",
+    "logo_url": null,
+    "mascot": "none",
+    "voices": {
+      "host": "vi-VN-HoaiMyNeural",
+      "khach": "vi-VN-NamMinhNeural"
+    },
+    "hashtags": [
+      "#BrandMau"
+    ]
+  },
+  "persona": {
+    "key": "sme",
+    "label": "Chủ doanh nghiệp nhỏ và vừa",
+    "tone": "Chuyên nghiệp, súc tích, nói bằng ngôn ngữ kinh doanh (chi phí, rủi ro, hiệu quả, thời gian)."
+  },
+  "facts": {
+    "project": {
+      "name": "Website đặt lịch Studio Ánh Dương",
+      "category": "Website đặt lịch",
+      "problem": "Studio nhận lịch qua tin nhắn Facebook, hay bị trùng giờ và quên lịch khách.",
+      "solution": "Website giới thiệu dịch vụ kèm form đặt lịch theo khung giờ trống, gửi thông báo cho chủ studio.",
+      "result": "Khách tự chọn giờ trống, chủ studio quản lý lịch tập trung một chỗ.",
+      "features": [
+        "Đặt lịch theo khung giờ trống",
+        "Trang dịch vụ và bảng giá",
+        "Thông báo lịch mới cho chủ studio",
+        "Quản trị lịch hẹn"
+      ],
+      "tech_stack": [
+        "Laravel",
+        "Tailwind CSS"
+      ],
+      "url": "https://example.com/portfolio/website-dat-lich-studio"
+    },
+    "review": null,
+    "topic": null
+  },
+  "images": [
+    "img/project-fullpage.jpg",
+    "img/workspace_hyper_realistic_sm.webp"
+  ],
+  "allowed_claims": [
+    "Báo giá trong 2 phút trên website",
+    "Không cần đặt cọc trước",
+    "Bàn giao 100% mã nguồn",
+    "Hỗ trợ 1–6 tháng sau bàn giao",
+    "Giao trong 7–21 ngày"
+  ],
+  "cta": {
+    "label": "example.com",
+    "url": "https://example.com/portfolio/website-dat-lich-studio"
+  },
+  "script": null
+}

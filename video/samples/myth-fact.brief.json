@@ -1,0 +1,55 @@
+{
+  "video_id": 0,
+  "template": "myth-fact",
+  "voice": "vi-VN-HoaiMyNeural",
+  "brand": {
+    "name": "Brand Mẫu",
+    "host": "example.com",
+    "cta_label": "example.com",
+    "colors": {
+      "primary": "#1E293B",
+      "accent": "#4F46E5",
+      "background": "#0F172A",
+      "text": "#FFFFFF"
+    },
+    "font": "Be Vietnam Pro",
+    "logo_url": null,
+    "mascot": "none",
+    "voices": {
+      "host": "vi-VN-HoaiMyNeural",
+      "khach": "vi-VN-NamMinhNeural"
+    },
+    "hashtags": [
+      "#BrandMau"
+    ]
+  },
+  "persona": {
+    "key": "individual_shop",
+    "label": "Cá nhân, shop nhỏ, người kinh doanh tự do",
+    "tone": "Thân thiện, thực tế, ví dụ đời thường (shop quần áo, tiệm bánh, spa). Nói về tiền, thời gian, công sức vận hành chứ không nói về công nghệ."
+  },
+  "facts": {
+    "project": null,
+    "review": null,
+    "topic": {
+      "title": "Có fanpage là đủ, cần gì website?",
+      "myth": "Bán hàng chỉ cần fanpage Facebook, không cần website.",
+      "fact": "Fanpage phụ thuộc thuật toán và khó tìm trên Google; website là nhà riêng: có trang sản phẩm, nhận đơn 24/7, khách tìm thấy trên Google. Nên có cả hai, fanpage dẫn khách về website."
+    }
+  },
+  "images": [
+    "img/workspace_hyper_realistic_sm.webp"
+  ],
+  "allowed_claims": [
+    "Báo giá trong 2 phút trên website",
+    "Không cần đặt cọc trước",
+    "Bàn giao 100% mã nguồn",
+    "Hỗ trợ 1–6 tháng sau bàn giao",
+    "Giao trong 7–21 ngày"
+  ],
+  "cta": {
+    "label": "example.com",
+    "url": "https://example.com/services/lam-website-ca-nhan-shop-nho"
+  },
+  "script": null
+}

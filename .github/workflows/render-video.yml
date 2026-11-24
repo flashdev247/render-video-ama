@@ -1,0 +1,121 @@
+name: Render video
+
+# Được app gọi qua GitHub API (workflow_dispatch) cho từng video, trên repo render CỦA TÀI KHOẢN (tạo từ repo mẫu, xem
+# .github/workflows/publish-renderer-template.yml của app). Chỉ RENDER kịch bản có sẵn trong brief: kịch bản đã được app
+# viết bằng AI và kiểm luật trước khi gọi, runner không gọi AI, không dùng secret; mọi thứ cần thiết nằm trong inputs
+# (signed URL tải brief và gửi kết quả). Chạy được ở repo bất kỳ có thư mục video/ và file này.
+# Brief có khối "brand" (màu, font, logo, linh vật, giọng đọc): xem docs/video-renderer.md của app.
+on:
+  workflow_dispatch:
+    inputs:
+      video_id:
+        description: ID video trong app
+        required: true
+      brief_url:
+        description: Signed URL tải brief (JSON, kèm kịch bản và khối brand)
+        required: true
+      callback_url:
+        description: Signed URL nhận kết quả
+        required: true
+
+# Mỗi video một nhóm: app tự giới hạn số video render cùng lúc của mỗi tài khoản (VIDEO_RENDER_CONCURRENCY, hàng chờ
+# trong DB xoay vòng giữa các brand), nên các video khác nhau chạy song song được; cùng một video gửi lại thì chờ lần trước.
+concurrency:
+  group: render-video-${{ inputs.video_id }}
+  cancel-in-progress: false
+
+jobs:
+  render:
+    name: Video #${{ inputs.video_id }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    env:
+      BRIEF_URL: ${{ inputs.brief_url }}
+      CALLBACK_URL: ${{ inputs.callback_url }}
+      HYPERFRAMES_TELEMETRY: '0'
+      HYPERFRAMES_SKIP_SKILLS: '1'
+
+    steps:
+      - name: Ẩn signed URL khỏi log
+        run: |
+          echo "::add-mask::$BRIEF_URL"
+          echo "::add-mask::$CALLBACK_URL"
+
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: video
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: video/package-lock.json
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: video/requirements.txt
+
+      # ffmpeg bản dựng sẵn (có cache), không dùng apt-get: apt trên runner có thể đứng chờ câu hỏi tương tác
+      - name: Cài ffmpeg
+        uses: FedericoCarboni/setup-ffmpeg@v3
+        timeout-minutes: 5
+
+      - name: Cài edge-tts và thư viện Node
+        timeout-minutes: 5
+        run: |
+          pip install -q -r video/requirements.txt
+          npm ci --prefix video --no-audit --no-fund
+
+      - name: Cache Chrome headless
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/hyperframes
+          key: hyperframes-chrome-${{ runner.os }}-${{ hashFiles('video/package-lock.json') }}
+
+      - name: Cài Chrome headless
+        timeout-minutes: 5
+        run: node video/node_modules/hyperframes/bin/hyperframes.mjs browser ensure
+
+      - name: Tải brief và kịch bản
+        run: |
+          curl -fsS --retry 3 "$BRIEF_URL" -o brief.json
+          jq -e '.script | objects' brief.json > script.json
+
+      # --workers 2: HyperFrames tự chọn max(1, số CPU − 2) nên runner 2 vCPU chỉ chạy 1 worker
+      - name: Render
+        timeout-minutes: 10
+        run: node video/scripts/render.mjs --script script.json --brief brief.json --out out/video.mp4 --thumb out/thumb.jpg --work work --workers 2
+
+      - name: Gửi kết quả về app
+        run: |
+          curl -fsS --retry 3 --max-time 300 \
+            -F status=rendered \
+            -F video=@out/video.mp4 \
+            -F thumb=@out/thumb.jpg \
+            -F script=@script.json \
+            -F result=@out/result.json \
+            -F captions=@out/captions.srt \
+            "$CALLBACK_URL"
+          touch .reported
+
+      - name: Báo render lỗi
+        if: failure()
+        run: |
+          [ -f .reported ] && exit 0
+          curl -fsS --retry 3 -F status=failed -F "error=Render lỗi, xem log: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" "$CALLBACK_URL" || true
+
+      # Chỉ giữ file khi lỗi (đỡ tốn dung lượng artifact)
+      - name: Lưu file để debug
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: video-${{ inputs.video_id }}-${{ github.run_attempt }}
+          path: |
+            out/
+            script.json
+          if-no-files-found: ignore
+          retention-days: 3

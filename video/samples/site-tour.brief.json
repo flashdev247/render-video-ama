@@ -1,0 +1,89 @@
+{
+  "video_id": 0,
+  "template": "site-tour",
+  "voice": "vi-VN-HoaiMyNeural",
+  "brand": {
+    "name": "Brand Mẫu",
+    "host": "example.com",
+    "cta_label": "example.com",
+    "colors": {
+      "primary": "#1E293B",
+      "accent": "#4F46E5",
+      "background": "#0F172A",
+      "text": "#FFFFFF"
+    },
+    "font": "Be Vietnam Pro",
+    "logo_url": null,
+    "mascot": "none",
+    "voices": {
+      "host": "vi-VN-HoaiMyNeural",
+      "khach": "vi-VN-NamMinhNeural"
+    },
+    "hashtags": [
+      "#BrandMau"
+    ]
+  },
+  "persona": {
+    "key": "sme",
+    "label": "Chủ doanh nghiệp nhỏ và vừa",
+    "tone": "Chuyên nghiệp, súc tích, nói bằng ngôn ngữ kinh doanh (chi phí, rủi ro, hiệu quả)."
+  },
+  "facts": {
+    "project": null,
+    "review": null,
+    "topic": null,
+    "tour": {
+      "title": "Xem nhanh trang Bảng giá Brand Mẫu",
+      "kind": "brand",
+      "label": "Bảng giá",
+      "url": "https://example.com/pricing",
+      "angle": "Chỉ cho khách cách xem gói theo loại web, so sánh gói và ước tính chi phí trước khi nhận báo giá chính thức.",
+      "landmarks": [
+        "Giải Pháp Phù Hợp Với Mọi Ngân Sách",
+        "Web Giới Thiệu",
+        "Web Bán Hàng",
+        "Web Đồ Án / Bài Tập",
+        "Web Dùng Nội Bộ",
+        "Telegram Bot",
+        "Hạ Tầng / Cloud & Domain",
+        "Gói Cơ Bản (Landing Page)",
+        "Chat Zalo",
+        "Nhận báo giá",
+        "Đặt ngay",
+        "Gói Chuyên Nghiệp (Business)",
+        "Chọn gói này",
+        "Gói Cao Cấp (Enterprise)",
+        "Liên hệ ngay",
+        "Ước Tính Chi Phí Dự Án Trong 30 Giây",
+        "Nhận Báo Giá Chính Thức",
+        "Nhận báo giá tùy chỉnh →",
+        "Từ Ý Tưởng Đến Website Chạy Thật Trong 5 Bước",
+        "Lắng nghe yêu cầu",
+        "Báo giá & phạm vi",
+        "Thiết kế & lập trình",
+        "Kiểm thử & bàn giao",
+        "Hỗ trợ sau bàn giao"
+      ]
+    }
+  },
+  "images": [],
+  "allowed_claims": [
+    "Báo giá trong 2 phút trên website",
+    "Không cần đặt cọc trước",
+    "Bàn giao 100% mã nguồn",
+    "Hỗ trợ 1–6 tháng sau bàn giao",
+    "Giao trong 7–21 ngày"
+  ],
+  "cta": {
+    "label": "example.com",
+    "url": "https://example.com/pricing"
+  },
+  "seo": {
+    "keywords": [
+      "báo giá website",
+      "thiết kế website",
+      "bảng giá thiết kế website"
+    ]
+  },
+  "script": null
+}

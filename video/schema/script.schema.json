@@ -1,0 +1,291 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:auto-marketing-ai:video-script",
+  "title": "Kịch bản video ngắn",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "template",
+    "voice",
+    "scenes",
+    "caption",
+    "hashtags",
+    "youtube_title",
+    "youtube_description"
+  ],
+  "properties": {
+    "template": {
+      "type": "string",
+      "enum": [
+        "project-showcase",
+        "tips",
+        "review-quote",
+        "before-after",
+        "myth-fact",
+        "web-build",
+        "quiz-ab",
+        "chat-skit",
+        "site-tour"
+      ]
+    },
+    "voice": {
+      "type": "string",
+      "enum": [
+        "vi-VN-HoaiMyNeural",
+        "vi-VN-NamMinhNeural"
+      ]
+    },
+    "keyword": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 80,
+      "description": "Từ khóa SEO chọn trong brief.seo.keywords (bắt buộc khi brief có seo.keywords)"
+    },
+    "scenes": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "title",
+          "voiceover"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "hook",
+              "point",
+              "quote",
+              "before",
+              "after",
+              "myth",
+              "fact",
+              "build",
+              "choice",
+              "answer",
+              "msg",
+              "tour",
+              "cta"
+            ]
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80,
+            "description": "Chữ to trên màn hình; đánh dấu 1 cụm từ khóa bằng *...*"
+          },
+          "body": {
+            "type": "string",
+            "maxLength": 220
+          },
+          "voiceover": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 400
+          },
+          "image": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "index": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 9
+          },
+          "mood": {
+            "type": "string",
+            "enum": [
+              "surprised",
+              "explain",
+              "think",
+              "happy",
+              "serious",
+              "point"
+            ],
+            "description": "Biểu cảm của linh vật trong cảnh (khi brand có linh vật)"
+          },
+          "section": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 3,
+            "description": "Mẫu web-build: cảnh \"build\" dựng phần thứ mấy của site.sections (0 = hero)"
+          },
+          "hold": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 4,
+            "description": "Mẫu quiz-ab: giây đếm ngược thêm sau lời thoại (chỉ cảnh \"choice\")"
+          },
+          "speaker": {
+            "type": "string",
+            "enum": [
+              "host",
+              "khach",
+              "tia"
+            ],
+            "description": "Mẫu chat-skit: ai gửi tin nhắn (cảnh \"msg\"): host = người dẫn đại diện brand, khach = khách. \"tia\" là alias cũ của host (vẫn nhận để kịch bản cũ render được)"
+          },
+          "target": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 60,
+            "description": "Mẫu site-tour: chữ đang hiện trên trang để cuộn tới (chọn trong brief.facts.tour.landmarks)"
+          },
+          "action": {
+            "type": "string",
+            "enum": [
+              "scroll",
+              "tap"
+            ],
+            "description": "Mẫu site-tour: scroll = cuộn tới và khoanh, tap = cuộn tới và bấm (con trỏ + vòng sóng)"
+          }
+        }
+      }
+    },
+    "caption": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    },
+    "hashtags": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 8,
+      "items": {
+        "type": "string",
+        "pattern": "^#[A-Za-z0-9_]{2,40}$"
+      }
+    },
+    "youtube_title": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "youtube_description": {
+      "type": "string",
+      "maxLength": 4500
+    },
+    "site": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "brand",
+        "palette",
+        "sections"
+      ],
+      "description": "Mẫu web-build: web demo dựng trong video (có cấu trúc, không viết HTML)",
+      "properties": {
+        "brand": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 24
+        },
+        "palette": {
+          "type": "string",
+          "enum": [
+            "peach",
+            "mint",
+            "ocean",
+            "grape",
+            "rose",
+            "slate"
+          ]
+        },
+        "sections": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "kind",
+              "heading"
+            ],
+            "properties": {
+              "kind": {
+                "type": "string",
+                "enum": [
+                  "hero",
+                  "features",
+                  "steps",
+                  "cta"
+                ]
+              },
+              "heading": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 40
+              },
+              "text": {
+                "type": "string",
+                "maxLength": 90
+              },
+              "items": {
+                "type": "array",
+                "maxItems": 4,
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 28
+                }
+              },
+              "button": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 18
+              }
+            }
+          }
+        }
+      }
+    },
+    "quiz": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mock",
+        "a",
+        "b",
+        "correct"
+      ],
+      "description": "Mẫu quiz-ab: loại mockup cài sẵn, chú thích 2 khung và đáp án",
+      "properties": {
+        "mock": {
+          "type": "string",
+          "enum": [
+            "button",
+            "text",
+            "form",
+            "speed",
+            "contact",
+            "photo"
+          ]
+        },
+        "a": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40
+        },
+        "b": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 40
+        },
+        "correct": {
+          "type": "string",
+          "enum": [
+            "a",
+            "b"
+          ]
+        }
+      }
+    }
+  }
+}

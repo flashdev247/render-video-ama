@@ -1,0 +1,20 @@
+{
+  "name": "auto-marketing-ai-video",
+  "private": true,
+  "type": "module",
+  "description": "Dựng video ngắn 9:16 cho nhiều brand từ kịch bản JSON (chạy trên GitHub Actions)",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "validate": "node scripts/validate-script.mjs",
+    "render": "node scripts/render.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "ajv": "8.20.0",
+    "gsap": "3.15.0",
+    "hyperframes": "0.8.185",
+    "puppeteer-core": "25.16.0"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "template": "review-quote",
+  "voice": "vi-VN-HoaiMyNeural",
+  "scenes": [
+    {
+      "type": "hook",
+      "title": "Khách nói gì về *Brand Mẫu*?",
+      "body": "Đánh giá thật từ chủ shop bánh",
+      "voiceover": "Chủ một tiệm bánh handmade đã nói gì sau khi có website riêng? Cùng nghe nhé.",
+      "mood": "surprised"
+    },
+    {
+      "type": "quote",
+      "title": "Đánh giá *5 sao*",
+      "body": "Làm việc rất nhanh, giải thích dễ hiểu, website dùng trên điện thoại rất mượt. Mình tự đăng sản phẩm được luôn.",
+      "voiceover": "Chị Mai chia sẻ: làm việc rất nhanh, giải thích dễ hiểu, website dùng trên điện thoại rất mượt. Mình tự đăng sản phẩm được luôn.",
+      "image": "img/project-fullpage.jpg",
+      "mood": "happy"
+    },
+    {
+      "type": "point",
+      "title": "Tự *quản lý* sản phẩm",
+      "body": "Không cần biết code, tự đăng bánh mới mỗi ngày",
+      "voiceover": "Website được làm để chủ shop tự đăng sản phẩm, không cần biết code, cập nhật bánh mới mỗi ngày chỉ vài thao tác.",
+      "mood": "explain"
+    },
+    {
+      "type": "cta",
+      "title": "Báo giá trong *2 phút*",
+      "body": "Không cần đặt cọc trước",
+      "voiceover": "Bạn cũng muốn có website riêng cho shop? Vào example chấm com để nhận báo giá nhé."
+    }
+  ],
+  "caption": "\"Làm việc rất nhanh, giải thích dễ hiểu, website dùng trên điện thoại rất mượt.\" ⭐⭐⭐⭐⭐\n\nCảm ơn chị Mai đã tin tưởng Brand Mẫu! Xem thêm đánh giá tại example.com/reviews",
+  "hashtags": [
+    "#BrandMau",
+    "#DanhGiaKhachHang",
+    "#WebsiteBanHang"
+  ],
+  "youtube_title": "Khách hàng nói gì về Brand Mẫu? #Shorts",
+  "youtube_description": "Đánh giá thật của khách hàng về website bán bánh handmade do Brand Mẫu thực hiện. Xem thêm: https://example.com/reviews"
+}

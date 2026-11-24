@@ -1,0 +1,124 @@
+{
+  "brief": {
+    "video_id": 0,
+    "template": "chat-skit",
+    "voice": "vi-VN-HoaiMyNeural",
+    "brand": {
+      "name": "Brand Mẫu",
+      "host": "example.com",
+      "cta_label": "example.com",
+      "colors": {
+        "primary": "#1E293B",
+        "accent": "#4F46E5",
+        "background": "#0F172A",
+        "text": "#FFFFFF"
+      },
+      "font": "Be Vietnam Pro",
+      "logo_url": null,
+      "mascot": "none",
+      "voices": {
+        "host": "vi-VN-HoaiMyNeural",
+        "khach": "vi-VN-NamMinhNeural"
+      },
+      "hashtags": [
+        "#BrandMau"
+      ]
+    },
+    "persona": {
+      "key": "individual_shop",
+      "label": "Cá nhân, shop nhỏ, người kinh doanh tự do",
+      "tone": "Thân thiện, thực tế, ví dụ đời thường (shop quần áo, tiệm bánh, spa). Nói về tiền, thời gian, công sức vận hành chứ không nói về công nghệ."
+    },
+    "facts": {
+      "project": null,
+      "review": null,
+      "topic": null,
+      "situation": {
+        "title": "Khách hỏi: có fanpage rồi, cần web làm gì?",
+        "customer": "chủ shop quần áo bán qua fanpage",
+        "question": "Shop đã có fanpage đông khách, có cần làm website không?",
+        "advice": [
+          "Fanpage phụ thuộc thuật toán, bài đăng trôi nhanh",
+          "Website giúp khách tìm thấy shop trên Google",
+          "Website có trang sản phẩm và nhận đơn cả khi shop không trực tin nhắn",
+          "Nên dùng cả hai: fanpage kéo khách, website chốt đơn"
+        ]
+      }
+    },
+    "images": [],
+    "allowed_claims": [
+      "Báo giá trong 2 phút trên website",
+      "Không cần đặt cọc trước",
+      "Bàn giao 100% mã nguồn",
+      "Hỗ trợ 1–6 tháng sau bàn giao",
+      "Giao trong 7–21 ngày"
+    ],
+    "cta": {
+      "label": "example.com",
+      "url": "https://example.com/services/lam-website-ca-nhan-shop-nho"
+    },
+    "seo": {
+      "keywords": [
+        "website bán hàng",
+        "thiết kế website",
+        "làm website bán hàng"
+      ]
+    },
+    "script": null
+  },
+  "script": {
+    "template": "chat-skit",
+    "voice": "vi-VN-HoaiMyNeural",
+    "keyword": "website bán hàng",
+    "scenes": [
+      {
+        "type": "hook",
+        "title": "Có fanpage rồi, cần *website* làm gì?",
+        "body": "Một tin nhắn shop nào cũng từng hỏi",
+        "voiceover": "Có fanpage rồi thì cần website bán hàng làm gì? Xem cách trả lời tin nhắn này nhé!",
+        "mood": "surprised"
+      },
+      {
+        "type": "msg",
+        "speaker": "khach",
+        "title": "Shop mình có fanpage đông khách rồi, cần *web* không?",
+        "voiceover": "Shop mình có fanpage đông khách rồi, có cần làm web nữa không?"
+      },
+      {
+        "type": "msg",
+        "speaker": "host",
+        "title": "Fanpage hay bị *trôi bài* lắm ạ",
+        "voiceover": "Fanpage phụ thuộc thuật toán, bài đăng trôi nhanh lắm ạ. Khách tìm trên Google cũng khó thấy shop."
+      },
+      {
+        "type": "msg",
+        "speaker": "khach",
+        "title": "Vậy có web thì khác gì?",
+        "voiceover": "Shop mình bán được 5 đơn mỗi ngày, có web thì khác gì?"
+      },
+      {
+        "type": "msg",
+        "speaker": "host",
+        "title": "Web *nhận đơn* cả khi shop bận",
+        "voiceover": "Website có trang sản phẩm rõ ràng, nhận đơn cả khi shop không trực tin nhắn. Fanpage kéo khách, website chốt đơn."
+      },
+      {
+        "type": "cta",
+        "title": "Fanpage + website = *chốt đơn*",
+        "body": "Không cần đặt cọc trước",
+        "voiceover": "Bạn cũng đang hỏi vậy? Vào example chấm com nhận báo giá trong hai phút nha!",
+        "mood": "happy"
+      }
+    ],
+    "caption": "Có fanpage rồi, cần website bán hàng làm gì? 💬\n\nFanpage kéo khách, website chốt đơn và giúp khách tìm thấy shop trên Google.\nNhận báo giá tại example.com\nShop bạn đang bán ở đâu?",
+    "hashtags": [
+      "#BrandMau",
+      "#WebsiteBanHang",
+      "#KinhDoanhOnline",
+      "#Fanpage"
+    ],
+    "youtube_title": "Có fanpage rồi, cần website bán hàng làm gì? #Shorts",
+    "youtube_description": "Website bán hàng hay fanpage? Tình huống minh họa: Brand Mẫu trả lời chủ shop. Nhận báo giá tại https://example.com/services/lam-website-ca-nhan-shop-nho"
+  },
+  "expect": "lời khách (nhân vật minh họa) không được có chữ số"
+}

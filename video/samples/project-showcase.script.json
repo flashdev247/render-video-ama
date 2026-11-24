@@ -1,0 +1,51 @@
+{
+  "template": "project-showcase",
+  "voice": "vi-VN-HoaiMyNeural",
+  "scenes": [
+    {
+      "type": "hook",
+      "title": "Hết cảnh *trùng lịch* khách",
+      "body": "Dự án website đặt lịch cho studio",
+      "voiceover": "Studio của bạn vẫn nhận lịch qua tin nhắn và hay bị trùng giờ? Xem cách Brand Mẫu giải quyết.",
+      "image": "img/workspace_hyper_realistic_sm.webp",
+      "mood": "surprised"
+    },
+    {
+      "type": "point",
+      "title": "Vấn đề: lịch *rải rác*",
+      "body": "Lịch nằm rải rác trong tin nhắn, dễ trùng và dễ quên",
+      "voiceover": "Studio Ánh Dương nhận lịch qua tin nhắn Facebook, lịch nằm rải rác nên thường bị trùng giờ và quên lịch khách.",
+      "mood": "serious"
+    },
+    {
+      "type": "point",
+      "title": "Giải pháp: *đặt lịch online*",
+      "body": "Website có form đặt lịch theo khung giờ trống",
+      "voiceover": "Brand Mẫu làm website giới thiệu dịch vụ, có form đặt lịch theo khung giờ còn trống và gửi thông báo ngay cho chủ studio.",
+      "image": "img/project-fullpage.jpg",
+      "mood": "point"
+    },
+    {
+      "type": "point",
+      "title": "Kết quả: *quản lý một chỗ*",
+      "body": "Khách tự chọn giờ, lịch quản lý tập trung một chỗ",
+      "voiceover": "Giờ khách tự chọn giờ trống, còn chủ studio xem và quản lý toàn bộ lịch hẹn ở một chỗ.",
+      "mood": "happy"
+    },
+    {
+      "type": "cta",
+      "title": "Bàn giao *100% mã nguồn*",
+      "body": "Giao trong 7–21 ngày",
+      "voiceover": "Cần một website như vậy cho doanh nghiệp của bạn? Vào example chấm com để nhận báo giá nhé."
+    }
+  ],
+  "caption": "Studio nhận lịch qua tin nhắn, hay bị trùng giờ? Đây là cách Brand Mẫu giải quyết bằng website đặt lịch theo khung giờ trống 👇\n\nXem chi tiết dự án tại example.com",
+  "hashtags": [
+    "#BrandMau",
+    "#WebsiteDatLich",
+    "#ThietKeWebsite",
+    "#ChuyenDoiSo"
+  ],
+  "youtube_title": "Website đặt lịch cho studio: hết cảnh trùng lịch #Shorts",
+  "youtube_description": "Dự án website đặt lịch cho studio do Brand Mẫu thực hiện. Xem chi tiết: https://example.com/portfolio/website-dat-lich-studio"
+}

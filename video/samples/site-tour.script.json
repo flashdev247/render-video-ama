@@ -1,0 +1,51 @@
+{
+  "template": "site-tour",
+  "voice": "vi-VN-HoaiMyNeural",
+  "keyword": "báo giá website",
+  "scenes": [
+    {
+      "type": "hook",
+      "title": "Xem *báo giá website* trong 30 giây",
+      "body": "Trang bảng giá Brand Mẫu",
+      "voiceover": "Muốn biết báo giá website trước khi gọi tư vấn? Cùng xem trang bảng giá của Brand Mẫu nhé!",
+      "mood": "surprised"
+    },
+    {
+      "type": "tour",
+      "target": "Web Bán Hàng",
+      "action": "tap",
+      "title": "Chọn *loại web* bạn cần",
+      "voiceover": "Đầu tiên, chọn loại web bạn cần, ví dụ web bán hàng."
+    },
+    {
+      "type": "tour",
+      "target": "Gói Chuyên Nghiệp (Business)",
+      "action": "scroll",
+      "title": "So sánh *từng gói*",
+      "voiceover": "Mỗi gói ghi rõ tính năng, so sánh nhanh để chọn gói vừa nhu cầu."
+    },
+    {
+      "type": "tour",
+      "target": "Ước Tính Chi Phí Dự Án Trong 30 Giây",
+      "action": "tap",
+      "title": "Tự *ước tính* chi phí",
+      "voiceover": "Chưa chắc chọn gói nào? Dùng phần ước tính chi phí, chọn tính năng là có con số tham khảo ngay."
+    },
+    {
+      "type": "cta",
+      "title": "Nhận báo giá trong *2 phút*",
+      "body": "Không cần đặt cọc trước",
+      "voiceover": "Vào example chấm com, mục bảng giá, nhận báo giá chính thức trong hai phút nha!",
+      "mood": "happy"
+    }
+  ],
+  "caption": "Báo giá website xem ở đâu cho nhanh? 💡\n\nChọn loại web, so sánh gói, tự ước tính chi phí ngay trên trang Bảng giá Brand Mẫu.\nXem tại example.com/pricing\nBạn đang cần loại web nào?",
+  "hashtags": [
+    "#BrandMau",
+    "#BaoGiaWebsite",
+    "#ThietKeWebsite",
+    "#DoanhNghiep"
+  ],
+  "youtube_title": "Báo giá website: xem nhanh trang Bảng giá #Shorts",
+  "youtube_description": "Báo giá website rõ ràng: chọn loại web, so sánh gói, ước tính chi phí. Xem tại https://example.com/pricing"
+}

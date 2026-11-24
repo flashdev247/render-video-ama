@@ -1,0 +1,108 @@
+{
+  "brief": {
+    "video_id": 0,
+    "template": "tips",
+    "voice": "vi-VN-HoaiMyNeural",
+    "brand": {
+      "name": "Brand Mẫu",
+      "host": "example.com",
+      "cta_label": "example.com",
+      "colors": {
+        "primary": "#1E293B",
+        "accent": "#4F46E5",
+        "background": "#0F172A",
+        "text": "#FFFFFF"
+      },
+      "font": "Be Vietnam Pro",
+      "logo_url": null,
+      "mascot": "none",
+      "voices": {
+        "host": "vi-VN-HoaiMyNeural",
+        "khach": "vi-VN-NamMinhNeural"
+      },
+      "hashtags": [
+        "#BrandMau"
+      ]
+    },
+    "persona": {
+      "key": "individual_shop",
+      "label": "Cá nhân, shop nhỏ, người kinh doanh tự do",
+      "tone": "Thân thiện, thực tế, ví dụ đời thường (shop quần áo, tiệm bánh, spa). Nói về tiền, thời gian, công sức vận hành chứ không nói về công nghệ."
+    },
+    "facts": {
+      "project": null,
+      "review": null,
+      "topic": {
+        "title": "3 lỗi khiến website bán hàng mất khách",
+        "angle": "Lỗi thường gặp ở website shop nhỏ: tải chậm trên điện thoại, đặt hàng rườm rà, thiếu thông tin liên hệ rõ ràng."
+      }
+    },
+    "images": [
+      "img/workspace_hyper_realistic_sm.webp",
+      "img/coding_detail_hyper_realistic_sm.webp"
+    ],
+    "allowed_claims": [
+      "Báo giá trong 2 phút trên website",
+      "Không cần đặt cọc trước",
+      "Bàn giao 100% mã nguồn",
+      "Hỗ trợ 1–6 tháng sau bàn giao",
+      "Giao trong 7–21 ngày"
+    ],
+    "cta": {
+      "label": "example.com",
+      "url": "https://example.com/services/lam-website-ca-nhan-shop-nho"
+    },
+    "script": null
+  },
+  "script": {
+    "template": "tips",
+    "voice": "vi-VN-HoaiMyNeural",
+    "scenes": [
+      {
+        "type": "hook",
+        "title": "3 lỗi khiến web bán hàng mất khách",
+        "body": "Shop nhỏ nào cũng dễ mắc",
+        "voiceover": "Website shop bạn có khách vào nhưng không ai đặt hàng? Có thể bạn đang mắc ba lỗi này.",
+        "image": "img/workspace_hyper_realistic_sm.webp"
+      },
+      {
+        "type": "point",
+        "index": 1,
+        "title": "Tải chậm trên điện thoại",
+        "body": "Khách lướt từ Facebook, chờ quá lâu là thoát",
+        "voiceover": "Thứ nhất, trang tải chậm trên điện thoại. Phần lớn khách vào từ Facebook hay TikTok, chờ vài giây không thấy gì là họ thoát luôn."
+      },
+      {
+        "type": "point",
+        "index": 2,
+        "title": "Đặt hàng quá rườm rà",
+        "body": "Bắt đăng ký tài khoản, điền cả chục ô",
+        "voiceover": "Thứ hai, đặt hàng quá rườm rà. Bắt khách đăng ký tài khoản, điền cả chục ô thông tin, đến bước thanh toán thì họ bỏ giỏ hàng."
+      },
+      {
+        "type": "point",
+        "index": 3,
+        "title": "Không có nút liên hệ nhanh",
+        "body": "Thiếu Zalo, hotline ngay trên màn hình",
+        "voiceover": "Thứ ba, không có nút liên hệ nhanh. Khách muốn hỏi thêm mà không thấy Zalo hay số điện thoại, họ sẽ sang shop khác.",
+        "image": "img/coding_detail_hyper_realistic_sm.webp"
+      },
+      {
+        "type": "cta",
+        "title": "Báo giá trong 2 phút",
+        "body": "Không cần đặt cọc trước",
+        "voiceover": "Muốn có website bán hàng gọn gàng, dễ đặt? Vào example chấm com để nhận báo giá trong hai phút nhé."
+      }
+    ],
+    "caption": "Ưu đãi 500k cho shop mới",
+    "hashtags": [
+      "#BrandMau",
+      "#ThietKeWebsite",
+      "#WebsiteBanHang",
+      "#KinhDoanhOnline"
+    ],
+    "youtube_title": "3 lỗi khiến website bán hàng mất khách #Shorts",
+    "youtube_description": "3 lỗi thường gặp khiến website shop nhỏ mất khách và cách khắc phục. Nhận báo giá làm website tại https://example.com"
+  },
+  "expect": "Không được ghi giá tiền"
+}

@@ -1,0 +1,52 @@
+{
+  "template": "before-after",
+  "voice": "vi-VN-HoaiMyNeural",
+  "scenes": [
+    {
+      "type": "hook",
+      "title": "Studio này *hết trùng lịch*",
+      "body": "Trước và sau khi có website",
+      "voiceover": "Một studio từng trùng lịch khách liên tục. Giờ thì sao? Cùng xem trước và sau nhé!",
+      "image": "img/project-fullpage.jpg",
+      "mood": "surprised"
+    },
+    {
+      "type": "before",
+      "title": "Nhận lịch qua *tin nhắn*",
+      "body": "Hay trùng giờ, dễ quên lịch khách",
+      "voiceover": "Trước đây, studio nhận lịch qua tin nhắn Facebook. Lịch nằm rải rác nên hay bị trùng giờ và quên lịch.",
+      "mood": "serious"
+    },
+    {
+      "type": "after",
+      "title": "Khách *tự đặt lịch*",
+      "body": "Form chọn khung giờ trống",
+      "voiceover": "Sau khi có website, khách tự chọn khung giờ trống ngay trên form đặt lịch, chủ studio nhận thông báo lịch mới.",
+      "image": "img/project-fullpage.jpg",
+      "mood": "happy"
+    },
+    {
+      "type": "after",
+      "title": "Quản lý lịch *một chỗ*",
+      "body": "Không còn trùng, không còn quên",
+      "voiceover": "Toàn bộ lịch hẹn được quản lý tập trung một chỗ, không còn cảnh trùng giờ nữa.",
+      "mood": "happy"
+    },
+    {
+      "type": "cta",
+      "title": "Bàn giao *100% mã nguồn*",
+      "body": "Giao trong 7–21 ngày",
+      "voiceover": "Bạn cũng muốn hết cảnh trùng lịch? Vào example chấm com để Brand Mẫu báo giá nhé.",
+      "mood": "happy"
+    }
+  ],
+  "caption": "Trước: nhận lịch qua tin nhắn, trùng giờ liên tục 😵\nSau: khách tự đặt lịch, chủ studio quản lý một chỗ ✅\n\nXem dự án và nhận báo giá tại example.com\nStudio của bạn đang nhận lịch bằng cách nào?",
+  "hashtags": [
+    "#BrandMau",
+    "#WebsiteDatLich",
+    "#ThietKeWebsite",
+    "#Studio"
+  ],
+  "youtube_title": "Studio hết trùng lịch nhờ website #Shorts",
+  "youtube_description": "Trước và sau khi studio có website đặt lịch. Xem dự án tại https://example.com/portfolio/website-dat-lich-studio"
+}

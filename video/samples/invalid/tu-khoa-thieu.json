@@ -1,0 +1,121 @@
+{
+  "brief": {
+    "video_id": 0,
+    "template": "tips",
+    "voice": "vi-VN-HoaiMyNeural",
+    "brand": {
+      "name": "Brand Mẫu",
+      "host": "example.com",
+      "cta_label": "example.com",
+      "colors": {
+        "primary": "#1E293B",
+        "accent": "#4F46E5",
+        "background": "#0F172A",
+        "text": "#FFFFFF"
+      },
+      "font": "Be Vietnam Pro",
+      "logo_url": null,
+      "mascot": "none",
+      "voices": {
+        "host": "vi-VN-HoaiMyNeural",
+        "khach": "vi-VN-NamMinhNeural"
+      },
+      "hashtags": [
+        "#BrandMau"
+      ]
+    },
+    "persona": {
+      "key": "individual_shop",
+      "label": "Cá nhân, shop nhỏ, người kinh doanh tự do",
+      "tone": "Thân thiện, thực tế, ví dụ đời thường (shop quần áo, tiệm bánh, spa). Nói về tiền, thời gian, công sức vận hành chứ không nói về công nghệ."
+    },
+    "facts": {
+      "project": null,
+      "review": null,
+      "topic": {
+        "title": "3 lỗi khiến website bán hàng mất khách",
+        "angle": "Lỗi thường gặp ở website shop nhỏ: tải chậm trên điện thoại, đặt hàng rườm rà, thiếu thông tin liên hệ rõ ràng."
+      }
+    },
+    "images": [
+      "img/workspace_hyper_realistic_sm.webp",
+      "img/coding_detail_hyper_realistic_sm.webp"
+    ],
+    "allowed_claims": [
+      "Báo giá trong 2 phút trên website",
+      "Không cần đặt cọc trước",
+      "Bàn giao 100% mã nguồn",
+      "Hỗ trợ 1–6 tháng sau bàn giao",
+      "Giao trong 7–21 ngày"
+    ],
+    "seo": {
+      "keywords": [
+        "website bán hàng",
+        "làm website bán hàng",
+        "thiết kế website shop"
+      ]
+    },
+    "cta": {
+      "label": "example.com",
+      "url": "https://example.com/services/lam-website-ca-nhan-shop-nho"
+    },
+    "script": null
+  },
+  "script": {
+    "template": "tips",
+    "voice": "vi-VN-HoaiMyNeural",
+    "keyword": "website bán hàng",
+    "scenes": [
+      {
+        "type": "hook",
+        "title": "Web có khách mà *không ai mua*?",
+        "body": "Shop nhỏ nào cũng dễ mắc",
+        "voiceover": "Website bán hàng có người vào mà chẳng ai đặt? Brand Mẫu chỉ bạn ba lỗi hay gặp nhất nhé!",
+        "image": "img/workspace_hyper_realistic_sm.webp",
+        "mood": "surprised"
+      },
+      {
+        "type": "point",
+        "index": 1,
+        "title": "Tải *chậm* trên điện thoại",
+        "body": "Khách lướt từ Facebook, chờ quá lâu là thoát",
+        "voiceover": "Thứ nhất, trang tải chậm trên điện thoại. Khách lướt từ Facebook, chờ vài giây không thấy gì là thoát luôn.",
+        "mood": "explain"
+      },
+      {
+        "type": "point",
+        "index": 2,
+        "title": "Đặt hàng quá *rườm rà*",
+        "body": "Bắt đăng ký tài khoản, điền cả chục ô",
+        "voiceover": "Thứ hai, đặt hàng rườm rà. Bắt đăng ký tài khoản, điền cả chục ô, tới bước thanh toán là khách bỏ giỏ.",
+        "mood": "think"
+      },
+      {
+        "type": "point",
+        "index": 3,
+        "title": "Thiếu nút *liên hệ nhanh*",
+        "body": "Thiếu Zalo, hotline ngay trên màn hình",
+        "voiceover": "Thứ ba, thiếu nút Zalo hay số điện thoại. Khách muốn hỏi mà không thấy, họ sang shop khác ngay.",
+        "image": "img/coding_detail_hyper_realistic_sm.webp",
+        "mood": "point"
+      },
+      {
+        "type": "cta",
+        "title": "Báo giá trong *2 phút*",
+        "body": "Không cần đặt cọc trước",
+        "voiceover": "Muốn web bán hàng gọn, dễ đặt? Vào example chấm com, nhận báo giá trong hai phút nha!",
+        "mood": "happy"
+      }
+    ],
+    "caption": "Shop có khách mà không ai đặt? Kiểm tra ngay 3 lỗi này 👇\n\n1️⃣ Tải chậm trên điện thoại\n2️⃣ Đặt hàng rườm rà\n3️⃣ Không có nút liên hệ nhanh\n\nNhận báo giá trong 2 phút tại example.com",
+    "hashtags": [
+      "#BrandMau",
+      "#ThietKeWebsite",
+      "#WebsiteBanHang",
+      "#KinhDoanhOnline"
+    ],
+    "youtube_title": "3 lỗi khiến website bán hàng mất khách #Shorts",
+    "youtube_description": "3 lỗi khiến website bán hàng của shop nhỏ mất khách và cách khắc phục. Nhận báo giá làm website tại https://example.com"
+  },
+  "expect": "Dòng đầu caption phải chứa từ khóa"
+}

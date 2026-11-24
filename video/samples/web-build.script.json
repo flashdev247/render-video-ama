@@ -1,0 +1,87 @@
+{
+  "template": "web-build",
+  "voice": "vi-VN-HoaiMyNeural",
+  "keyword": "website tiệm bánh",
+  "site": {
+    "brand": "Bánh Nhà Mây",
+    "palette": "peach",
+    "sections": [
+      {
+        "kind": "hero",
+        "heading": "Bánh kem nhà làm mỗi ngày",
+        "text": "Nguyên liệu tươi, nhận đặt bánh sinh nhật theo yêu cầu",
+        "button": "Đặt bánh ngay"
+      },
+      {
+        "kind": "features",
+        "heading": "Vì sao khách chọn tiệm?",
+        "items": [
+          "Kem tươi ít ngọt",
+          "Giao tận nơi",
+          "Vẽ theo yêu cầu"
+        ]
+      },
+      {
+        "kind": "steps",
+        "heading": "Đặt bánh 3 bước",
+        "items": [
+          "Chọn mẫu bánh",
+          "Nhắn Zalo cho tiệm",
+          "Nhận bánh tận nhà"
+        ]
+      },
+      {
+        "kind": "cta",
+        "heading": "Sinh nhật sắp tới?",
+        "text": "Nhắn tiệm để giữ lịch làm bánh",
+        "button": "Chat Zalo"
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "type": "hook",
+      "title": "Dựng *website tiệm bánh* trong 30 giây",
+      "body": "Xem từng phần hiện ra nhé",
+      "voiceover": "Thử dựng website tiệm bánh trong ba mươi giây, xem trang web hiện ra từng phần nhé!",
+      "mood": "surprised"
+    },
+    {
+      "type": "build",
+      "section": 0,
+      "title": "Đầu trang: *nói ngay* bán gì",
+      "voiceover": "Đầu trang nói ngay tiệm bán gì, kèm một nút đặt bánh thật to để khách bấm liền.",
+      "mood": "explain"
+    },
+    {
+      "type": "build",
+      "section": 1,
+      "title": "Lý do khách *chọn tiệm*",
+      "voiceover": "Tiếp theo là ba lý do khách nên chọn tiệm: kem tươi ít ngọt, giao tận nơi, vẽ theo yêu cầu.",
+      "mood": "point"
+    },
+    {
+      "type": "build",
+      "section": 3,
+      "title": "Cuối trang: *một nút* liên hệ",
+      "voiceover": "Cuối trang chỉ cần một nút chat Zalo, khách hỏi là tiệm chốt đơn được ngay.",
+      "mood": "happy"
+    },
+    {
+      "type": "cta",
+      "title": "Muốn web *thật* cho tiệm?",
+      "body": "Không cần đặt cọc trước",
+      "voiceover": "Đây chỉ là bản demo. Muốn web thật cho tiệm, vào example chấm com nhận báo giá trong hai phút nha!",
+      "mood": "happy"
+    }
+  ],
+  "caption": "Website tiệm bánh dựng trong 30 giây 🎂\n\nĐầu trang nói rõ bán gì, giữa trang lý do chọn tiệm, cuối trang một nút chat Zalo.\nNhận báo giá tại example.com\nTiệm bạn đã có web chưa?",
+  "hashtags": [
+    "#BrandMau",
+    "#WebsiteTiemBanh",
+    "#ThietKeWebsite",
+    "#KinhDoanhOnline"
+  ],
+  "youtube_title": "Website tiệm bánh dựng trong 30 giây #Shorts",
+  "youtube_description": "Website tiệm bánh cần gì? Đầu trang rõ ràng, lý do chọn tiệm, nút chat Zalo. Nhận báo giá tại https://example.com/services/lam-website-ca-nhan-shop-nho"
+}
